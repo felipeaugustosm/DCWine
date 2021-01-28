@@ -1,6 +1,6 @@
 library(tibble)
 # set caminho dos dados
-pathData <- '/home/felipe/Área de Trabalho/Analise de Dados/Vinho/DadosASeremAnalisados/food-wine-quality/data'
+pathData <- '/home/felipe/Documentos/Analise de Dados/Vinho/DadosASeremAnalisados/food-wine-quality/data/'
 setwd(pathData)
 
 # -------------------------------------------------------------------------
@@ -9,7 +9,7 @@ redWine <- data.frame(read.csv(file = 'winequality_red.csv'))
 
 # -------------------------------------------------------------------------
 #Alterar caminho para salvar as imagens geradas do gráfico
-pathplot='/home/felipe/Área de Trabalho/Analise de Dados/Vinho/Gráficos/BoxPlot'
+pathplot='/home/felipe/Documentos/Analise de Dados/Vinho/Gráficos/BoxPlot'
 setwd(pathplot)
 
 # Gerar Gráfico Bloxplot da Acidez Fixa

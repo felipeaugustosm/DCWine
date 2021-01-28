@@ -1,6 +1,6 @@
 library(tibble)
 # set caminho dos dados
-pathData <- '/home/felipe/Área de Trabalho/Analise de Dados/Vinho/DadosASeremAnalisados/food-wine-quality/data'
+pathData <- '/home/felipe/Documentos/Analise de Dados/Vinho/DadosASeremAnalisados/food-wine-quality/data/'
 setwd(pathData)
 
 # -------------------------------------------------------------------------
@@ -25,7 +25,7 @@ corDegrade <- colorRampPalette(c("red","yellow")) # Degradê de vermelho para am
 
 caracteristica_vinho=as.matrix(df_estatistica[1])
 
-pathplot='/home/felipe/Área de Trabalho/Analise de Dados/Vinho/Gráficos/Estatistica'
+pathplot='/home/felipe/Documentos/Analise de Dados/Vinho/Gráficos/Estatistica'
 setwd(pathplot)
 
 pathnameFile = 'MediaCaracteristicas.jpeg'
@@ -93,7 +93,7 @@ barplot(t(as.matrix(df_estatistica[5])),beside=TRUE,
 dev.off()
 
 # Gráfico do valor máximo das caracteristicas
-pathnameFile = 'MenorValorCaracteristicas.jpeg'
+pathnameFile = 'MaiorValorCaracteristicas.jpeg'
 
 jpeg(filename = pathnameFile, width = 800, height = 800, units = "px", pointsize = 12,
      quality = 75, bg = "white")
