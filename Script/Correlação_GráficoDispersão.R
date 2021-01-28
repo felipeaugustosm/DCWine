@@ -1,5 +1,5 @@
 # set caminho dos dados
-pathData <- '/home/felipe/Documentos/Analise de Dados/Vinho/DadosASeremAnalisados/food-wine-quality/data/'
+pathData <- '/home/felipe/Documentos/Analise de Dados/DCWine/DadosASeremAnalisados/food-wine-quality/data/'
 setwd(pathData)
 
 #Ler dados de vinhos tintos
@@ -10,7 +10,7 @@ corRedWine <- data.frame(cor(redWine,use = "everything",
                              method = c("pearson", "kendall", "spearman")))
 
 # Grava dados no arquivo csv.
-pathDataSaved = '/home/felipe/Documentos/Analise de Dados/Vinho/DadosGerados'
+pathDataSaved = '/home/felipe/Documentos/Analise de Dados/DCWine/DadosGerados'
 setwd(pathDataSaved)
 fileName='CorrelacaoRedWine.csv'
 write.csv(x=corRedWine, file=fileName)
@@ -19,7 +19,7 @@ write.csv(x=corRedWine, file=fileName)
 # Gŕafico de Dispersão
 
 # Set caminho dos gráficos
-pathGraficos = '/home/felipe/Documentos/Analise de Dados/Vinho/Gráficos/Dispersão'
+pathGraficos = '/home/felipe/Documentos/Analise de Dados/DCWine/Gráficos/Dispersão'
 setwd(pathGraficos)
 
 # Gerar e salver gráfico

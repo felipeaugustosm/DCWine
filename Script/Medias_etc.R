@@ -1,6 +1,6 @@
 library(tibble)
 # set caminho dos dados
-pathData <- '/home/felipe/Documentos/Analise de Dados/Vinho/DadosASeremAnalisados/food-wine-quality/data/'
+pathData <- '/home/felipe/Documentos/Analise de Dados/DCWine/DadosASeremAnalisados/food-wine-quality/data/'
 setwd(pathData)
 
 # -------------------------------------------------------------------------
@@ -25,7 +25,7 @@ corDegrade <- colorRampPalette(c("red","yellow")) # Degradê de vermelho para am
 
 caracteristica_vinho=as.matrix(df_estatistica[1])
 
-pathplot='/home/felipe/Documentos/Analise de Dados/Vinho/Gráficos/Estatistica'
+pathplot='/home/felipe/Documentos/Analise de Dados/DCWine/Gráficos/Estatistica'
 setwd(pathplot)
 
 pathnameFile = 'MediaCaracteristicas.jpeg'
