@@ -21,6 +21,12 @@ df_estatistica <- add_row(df_estatistica, Nome="álcool", Media=mean(redWine$alc
 df_estatistica <- add_row(df_estatistica, Nome="Quaidade", Media=mean(redWine$quality), Mediana=median(redWine$quality),desvioPadrao=sd(redWine$quality),varianca=var(redWine$alcohol), Maior=max(redWine$alcohol), Menor=min(redWine$alcohol))
 df_estatistica
 
+# Grava dados no arquivo csv.
+pathDataSaved = '/home/felipe/Documentos/Analise de Dados/DCWine/DadosGerados'
+setwd(pathDataSaved)
+fileName='EstatisticaRedWine.csv'
+write.csv(x=df_estatistica, file=fileName)
+
 corDegrade <- colorRampPalette(c("red","yellow")) # Degradê de vermelho para amarelo
 
 caracteristica_vinho=as.matrix(df_estatistica[1])
